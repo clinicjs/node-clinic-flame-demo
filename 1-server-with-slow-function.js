@@ -11,20 +11,18 @@ app.get('/', (req, res) => {
 
 app.listen(3000)
 
-function initPayload (uidSize = 20) {
-
+function initPayload (idSize = 20) {
   return function payload () {
     let chars = ''
-    let n = uidSize
+    let n = idSize
     const date = new Date().toISOString()
     const radix = 36
-    n *= n * uidSize
+    n *= n * idSize
     while (n--) {
       const num = Number(new Date(date)) + n
       chars += num.toString(radix).toUpperCase()
     }
-    const uid = chars.slice(-uidSize)
-    return { date, uid }
+    const id = chars.slice(-idSize)
+    return { date, id }
   }
-
 }

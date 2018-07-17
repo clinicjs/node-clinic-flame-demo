@@ -13,9 +13,12 @@ an ISO date, and a UID.
 
 Each should produce different Flame results indicating the stack profiles of each. 
 
-Upon profiling `1` you should see a very few request per second 
+Upon profiling `1` you should see a very few request per second.
+
 Running `2` you should see much higher requests per second, about 85x faster than `1`.
+
 Running `3` you should see around double the amount of requests per second versus `2`.
+
 
 To get started, generate a flame graph for the first server:
 
