@@ -6,6 +6,7 @@ const app = express()
 const payload = initPayload()
 
 app.get('/', (req, res) => {
+  res.header('Content-Type', 'application/json')
   res.send(payload())
 })
 
