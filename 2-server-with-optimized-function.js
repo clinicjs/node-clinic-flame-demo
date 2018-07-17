@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
 app.listen(3000)
 
 function initPayload (uidSize = 20) {
-  const pad = '0'.repeat(uidSize - uidSize.toString().length)
   const max = 2147483647
   var count = 0
   return function payload () {
