@@ -1,0 +1,19 @@
+{
+  "name": "node-clinic-flame-demo",
+  "version": "1.0.0",
+  "description": "A flame example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearform/node-clinic-flame-demo.git"
+  },
+  "author": "David Mark Clements (@davidmarkclem)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nearform/node-clinic-flame-demo/issues"
+  },
+  "homepage": "https://github.com/nearform/node-clinic-flame-demoe#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fastify": "^1.8.0"
+  }
+}
