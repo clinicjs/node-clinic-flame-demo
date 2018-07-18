@@ -20,6 +20,6 @@ function initPayload (idSize = 20) {
     const date = Date.now()
     const chars = count.toString(36).toUpperCase()
     const id = '0'.repeat(idSize - chars.length) + chars
-    return {date, id}
+    return `{"date": ${date}, "id": "${id}"}`
   }
 }
