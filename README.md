@@ -26,5 +26,6 @@ Running `4` you should see roughly a 10% improvement versus `3`.
 To get started, generate a flame graph for the first server:
 
 ```sh
-clinic flame --on-port 'autocannon localhost:$PORT' -- node 1-server-with-slow-function.js
+clinic flame --autocannon [ 'localhost:$PORT' ] -- node
+1-server-with-slow-function.js
 ```
