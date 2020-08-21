@@ -14,6 +14,6 @@
   "homepage": "https://github.com/nearform/node-clinic-flame-demoe#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "fastify": "^1.8.0"
+    "fastify": "^3.2.1"
   }
 }
